@@ -989,9 +989,22 @@ body {
     .skill .container .testmonials {
         flex-basis: 100%;
         padding-right: 0;
+        text-align: center;
+    }
+    .skill .container .testmonials .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill .container .testmonials .content img {
+        margin: 15px;
+    }
+    .skill .container .testmonials .content .text {
+        text-align: center;
     }
     .skill .container .skills {
         flex-basis: 100%;
+        padding: 0;
         padding-bottom: 50px;
     }
 }
