@@ -638,7 +638,7 @@ body {
     }
     .protfolio .head a {
         width: 100%;
-        margin: 20px;
+        margin: 20px 0;
     }
 }
 @media (min-width:676px) and (max-width:1200px) {
@@ -712,6 +712,10 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+@media (min-width:0px) and (max-width:675px) {
+    .about .container .main-heading h2::before {
+        bottom: -125px ;
+}
 
 /* Start Stauts  */
 
@@ -761,6 +765,7 @@ body {
         flex-basis: 100%;
         padding: 30px 0;
     }
+    
 }
 @media (min-width:676px) and (max-width:1200px) {
     .status .container .box {
