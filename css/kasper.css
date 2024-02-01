@@ -232,7 +232,6 @@ body {
     height: 100vh;
     width: 100%;
     left: 0;
-    background-size: cover;
     background-image: url(../imgs/landing.jpg);
 }
 
@@ -347,7 +346,6 @@ body {
     background-color: white;
     text-align: center;
     padding: 50px;
-    overflow: hidden;
 }
 
 .main-heading h2 {
@@ -385,10 +383,6 @@ body {
 .main-heading .text {
     max-width: 600px;
     margin: 0 auto;
-}
-
-.services .container {
-    padding: 50px 0;
 }
 
 .services .srv-cont {
@@ -533,7 +527,7 @@ body {
     position: relative;
 }
 
-.protfolio .container .main-heading {
+.protfolio .container {
     overflow: hidden;
 }
 
@@ -542,11 +536,10 @@ body {
     text-align: center;
     background-color: white;
     padding: 50px;
-    width: 50%;
+    text-wrap: nowrap;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
 }
 
 .protfolio .head a {
@@ -570,8 +563,6 @@ body {
 
 .protfolio .imgs {
     position: relative;
-    /* display: grid;
-    grid-template-columns: repeat(4 , 1fr); */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -633,12 +624,14 @@ body {
     .protfolio .box {
         flex-basis: 100%;
     }
-        .protfolio .head {
-        display: block;
+    .protfolio .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .protfolio .head a {
-        width: 100%;
-        margin: 20px 0;
+        margin: 10px 0;
+        width: 30%;
     }
 }
 @media (min-width:676px) and (max-width:1200px) {
@@ -712,9 +705,10 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-@media (min-width:0px) and (max-width:675px) {
+@media (max-width:453px) {
     .about .container .main-heading h2::before {
-        bottom: -125px ;
+        bottom: -125px;
+    }
 }
 
 /* Start Stauts  */
@@ -765,7 +759,6 @@ body {
         flex-basis: 100%;
         padding: 30px 0;
     }
-    
 }
 @media (min-width:676px) and (max-width:1200px) {
     .status .container .box {
@@ -796,6 +789,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
     padding: 0;
 }
 .skill .container .testmonials ul li {
@@ -994,6 +988,7 @@ body {
     }
     .skill .container .testmonials {
         flex-basis: 100%;
+        padding-right: 0;
     }
     .skill .container .skills {
         flex-basis: 100%;
@@ -1007,10 +1002,12 @@ body {
     .skill .container .testmonials {
         flex-basis: 100%;
         width: 100%;
+        padding-right: 0;
     }
     .skill .container .skills {
         flex-basis: 100%;
         width: 100%;
+        padding: 0;
         padding-bottom: 50px;
     }
 }
