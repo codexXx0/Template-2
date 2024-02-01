@@ -347,6 +347,7 @@ body {
     background-color: white;
     text-align: center;
     padding: 50px;
+    overflow: hidden;
 }
 
 .main-heading h2 {
@@ -532,15 +533,20 @@ body {
     position: relative;
 }
 
+.protfolio .container .main-heading {
+    overflow: hidden;
+}
+
 .protfolio .head {
     position: relative;
     text-align: center;
     background-color: white;
     padding: 50px;
-    text-wrap: nowrap;
-    width: 100%;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
 }
 
 .protfolio .head a {
@@ -626,6 +632,13 @@ body {
 @media (min-width:0px) and (max-width:675px) {
     .protfolio .box {
         flex-basis: 100%;
+    }
+        .protfolio .head {
+        display: block;
+    }
+    .protfolio .head a {
+        width: 100%;
+        margin: 20px;
     }
 }
 @media (min-width:676px) and (max-width:1200px) {
@@ -778,6 +791,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 .skill .container .testmonials ul li {
     position: relative;
