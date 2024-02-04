@@ -38,6 +38,18 @@ body {
 
 /* Start Media */
 
+@media (min-width:0px) and (max-width:400px) {
+    h2 {
+        font-size: 30px !important ;
+    }
+}
+
+@media (max-width:675px) {
+    .container {
+        width: 100% !important;
+    }
+} 
+
 @media (min-width:675px) {
     .container {
         width: 80%;
@@ -46,14 +58,6 @@ body {
         display: none;
     }
 }
-
-
-@media (min-width:0px) and (max-width:675px) {
-    .container {
-        width: 80%;
-    }
-} 
-
 
 @media  (max-width: 768px) {
     .container {
@@ -185,12 +189,11 @@ body {
 
 @media (min-width:0px) and (max-width:675px) {
     .container {
-        width: 80%;
+        width: 100%;
     }
     .header nav {
         position: absolute;
         margin: auto;
-        width: 88%;
     }
     .header nav ul {
         display: none;
@@ -214,8 +217,9 @@ body {
         flex-direction: column;
         position: absolute;
         top: 82%;
-        width: 133%;
-        left: -16.5%;
+        width: 110%;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 0;
         background-color: rgba(0, 0, 0, 0.413);
     }
@@ -343,10 +347,14 @@ body {
     position: relative;
 }
 
+.services .container {
+    padding: 50px 0;
+}
+
 .main-heading {
     background-color: white;
     text-align: center;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .main-heading h2 {
@@ -406,6 +414,12 @@ body {
 }
 .services .srv-cont .srv-box h2{
     color: var(--main-color);
+}
+
+@media (min-width:0px) and (max-width:400px) {
+    .main-heading h2::before {
+        bottom: -56px;
+    }
 }
 
 @media (min-width:0px) and (max-width:675px) {
@@ -705,11 +719,6 @@ body {
     max-width: 100%;
     left: 50%;
     transform: translateX(-50%);
-}
-@media (max-width:453px) {
-    .about .container .main-heading h2::before {
-        bottom: -125px;
-    }
 }
 
 /* Start Stauts  */
@@ -1211,6 +1220,7 @@ body {
     border-right: none;
     caret-color: var(--main-color);
     color: white;
+    width: 100%;
 }
 .sub .container form input[type=email]::placeholder {
     color: white;
